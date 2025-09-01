@@ -1,9 +1,9 @@
-import { GoogleGenerativeAI } from '@google/generative-ai'
+import { GoogleGenerativeAI, GenerativeModel } from '@google/generative-ai'
 import { CodeAssistResponse, ConversationContext } from '@/types'
 
 class GeminiService {
   private client: GoogleGenerativeAI
-  private model: any // eslint-disable-line @typescript-eslint/no-explicit-any
+  private model: GenerativeModel
 
   constructor() {
     // Initialize with API key from environment variables
